@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 body {
 	background-color: green;
 }
 
 h1, p {
 	color: white;
+=======
+body {
+	background-color: green;
+}
+
+h1, p {
+	color: white;
+>>>>>>> origin/master
 }
