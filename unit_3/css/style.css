@@ -1,6 +1,7 @@
 body {
-	background-color: #9896FF;
+	background-color: #f2795c;
 	font-family: "Futura", "Century Gothic", Sans-Serif;
+	 
 }
 	
 
@@ -8,6 +9,14 @@ h1 {
 	color: #FFF;
 	text-align: center;
 } 
+
+div.main_hompage_image {
+	background-image: url("../images/kids_muse_southeast_small.jpg"); 
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height: 90%;
+	padding: 25%;
+}
 
 a, p, ul {
 	color: #FFF;
@@ -19,8 +28,4 @@ p#slogan {
 	font-weight: bold;
 	font-style: italic;
 	text-align: center;
-}
-
-div.value_prop {
-		background-image: url("kids_muse_southeast_small.jpg");
 }
