@@ -1,8 +1,26 @@
 body {
-	background-image: url("images/kids_muse_southeast_small.jpg");
-	background-color: gray;
+	background-color: #9896FF;
+	font-family: "Futura", "Century Gothic", Sans-Serif;
+}
+	
+
+h1 {
+	color: #FFF;
+	text-align: center;
+} 
+
+a, p, ul {
+	color: #FFF;
+	text-align: center;
+    list-style-type: none;
 }
 
-h1, p {
-	color: white;
+p#slogan {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+div.value_prop {
+		background-image: url("kids_muse_southeast_small.jpg");
 }
