@@ -13,7 +13,7 @@ body {
 	
 
 #title {
-	color: #FFF;
+	color: #000;
 	font-size: 3em;
 	text-align: center;
 	text-transform: uppercase; 
@@ -38,7 +38,7 @@ body {
 }
 
 header {
-	background-color: #000;
+	background-color: #FFF;
 	padding: 10px;
 }
 
@@ -55,6 +55,7 @@ nav {
 }
 nav a {
 	text-decoration: none;
+	color: #000;
 	padding: 10px;
 }
 
@@ -75,4 +76,5 @@ p#slogan {
 	font-style: italic;
 	text-align: center;
 	font-size: 1em;
+	letter-spacing: .1em;
 }
