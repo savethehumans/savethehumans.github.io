@@ -9,6 +9,7 @@ body {
 	/*font-family: "Futura", "Century Gothic", Sans-Serif;
 	 */
 	font-family: "Didact Gothic", sans-serif;
+	font-size: 100%;
 }
 	
 
@@ -62,13 +63,19 @@ nav a {
 nav a:hover {
 	color: #f2795c;
 }
+
 p, ul {
 	color: #FFF;
     line-height: 1.8;
-    padding-left: 10px;
     font-size: 1em;
     list-style-type: circle;
     text-align: center;
+}
+
+li {
+	width: 25%;
+    height: 100px;
+    float: left;
 }
 
 p#slogan {
