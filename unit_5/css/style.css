@@ -11,7 +11,69 @@ body {
 	font-family: "Didact Gothic", sans-serif;
 	font-size: 100%;
 }
-	
+
+.wrapper {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav#top {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+img#logo {
+}
+
+nav#utilities {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav#main {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav {
+	text-align: center;
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+nav a {
+	text-decoration: none;
+	color: #000;
+	padding: 10px;
+}
+
+nav a:hover {
+	color: #f2795c;
+}
+
+section#alert {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+div#main {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#main_homepage_image {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+
 
 #title {
 	color: #000;
@@ -39,8 +101,9 @@ body {
 }
 
 header {
-	background-color: #FFF;
-	padding: 10px;
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
 }
 
 a {
@@ -50,26 +113,20 @@ a {
     font-size: 1.3em;
 }
 
-nav {
-	padding: 10px;
-	text-align: center;
-}
-nav a {
-	text-decoration: none;
-	color: #000;
-	padding: 10px;
-}
 
-nav a:hover {
-	color: #f2795c;
-}
+
 p, ul {
 	color: #FFF;
     line-height: 1.8;
-    padding-left: 10px;
     font-size: 1em;
     list-style-type: circle;
     text-align: center;
+}
+
+li {
+	width: 25%;
+    height: 100px;
+	float: left;
 }
 
 p#slogan {
@@ -78,4 +135,47 @@ p#slogan {
 	text-align: center;
 	font-size: 1em;
 	letter-spacing: .1em;
+}
+
+section#showcase {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+
+}	
+
+section#books {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+article.blogpost {
+	background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#media {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#newsletter {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav#footer {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+footer { 
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
 }
