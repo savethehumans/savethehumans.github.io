@@ -4,6 +4,14 @@
 	/*box-sizing:border-box; ask why this isn't working*/
 }
 
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
 body {
 	background-color: #f2795c;
 	/*font-family: "Futura", "Century Gothic", Sans-Serif;
@@ -123,11 +131,13 @@ p, ul {
     text-align: center;
 }
 
-li {
+
+
+/*li {
 	width: 25%;
     height: 100px;
 	float: left;
-}
+}*/
 
 p#slogan {
 	font-weight: bold;
@@ -138,11 +148,25 @@ p#slogan {
 }
 
 section#showcase {
-	background-color: #FFE2B8;
+	background-color: #FFB7CF;
     border: 1px black solid;
     padding: 20px;
-
 }	
+
+article.service_buttons {
+    background-color: #E582A2;
+    outline: 1px black solid;
+    float: left;
+    width: 25%;
+    height: 5em;
+    text-align: center;
+}
+
+h3.service_button_title {
+	margin: 1em;
+	color: #fff;
+	clear: both;
+}
 
 section#books {
 	background-color: #FFE2B8;
@@ -157,9 +181,27 @@ article.blogpost {
 }
 
 section#media {
-	background-color: #FFE2B8;
+	background-color: #FFB7CF;
     border: 1px black solid;
     padding: 20px;
+}	
+
+img.media_icon {
+	width: 20%;
+}
+p.media_text {
+	clear: both;
+}
+
+article.media_buttons {
+    background-color: #E582A2;
+    outline: 1px black solid;
+    padding: 4em 0 0 0;
+    float: left;
+    width: 20%;
+    height: 5em;
+    text-align: center;
+}
 }
 
 section#newsletter {
