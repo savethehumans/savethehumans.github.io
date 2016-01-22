@@ -133,11 +133,6 @@ p, ul {
 
 
 
-/*li {
-	width: 25%;
-    height: 100px;
-	float: left;
-}*/
 
 p#slogan {
 	font-weight: bold;
@@ -153,20 +148,18 @@ section#showcase {
     padding: 20px;
 }	
 
-article.service_buttons {
+a.service_buttons {
     background-color: #E582A2;
     outline: 1px black solid;
     float: left;
     width: 25%;
-    height: 5em;
+    color: #fff;
+    padding: 3em 1em 1em;
     text-align: center;
+    min-height: 200px;
+    text-decoration: none;
 }
 
-h3.service_button_title {
-	margin: 1em;
-	color: #fff;
-	clear: both;
-}
 
 section#books {
 	background-color: #FFE2B8;
@@ -191,15 +184,16 @@ img.media_icon {
 }
 p.media_text {
 	clear: both;
+	width: 100%;
+	padding: 5px;
 }
 
-article.media_buttons {
+div.media_buttons {
     background-color: #E582A2;
     outline: 1px black solid;
     padding: 4em 0 0 0;
     float: left;
     width: 20%;
-    height: 5em;
     text-align: center;
 }
 }
