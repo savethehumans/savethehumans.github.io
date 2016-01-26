@@ -1,0 +1,217 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
+body {
+	background-color: #f2795c;
+	/*font-family: "Futura", "Century Gothic", Sans-Serif;
+	 */
+	font-family: "Didact Gothic", sans-serif;
+	font-size: 100%;
+}
+
+.wrapper {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav#top {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+img#logo {
+}
+
+nav#utilities {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav#main {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav {
+	text-align: center;
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+nav a {
+	text-decoration: none;
+	color: #000;
+	padding: 10px;
+}
+
+nav a:hover {
+	color: #f2795c;
+}
+
+section#alert {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+div#main {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#main_homepage_image {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+
+
+#title {
+	color: #000;
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase; 
+} 
+
+#hero {
+	color: #FFF;
+	font-size: 3em;
+	text-align: center;
+	font-family: "Arvo", serif;
+	letter-spacing: .1em;
+	word-spacing: .05em;
+} 
+
+#main_hompage_image {
+	background-image: url("../images/kids_muse_southeast_small.jpg"); 
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: 100%;
+	height: 90%;
+	padding: 25%;
+}
+
+header {
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+a {
+	color: #FFF;
+    line-height: 1.8;
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+
+
+
+p, ul {
+	color: #FFF;
+    line-height: 1.8;
+    font-size: 1em;
+    list-style-type: circle;
+    text-align: center;
+}
+
+
+
+
+p#slogan {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	font-size: 1em;
+	letter-spacing: .1em;
+}
+
+section#showcase {
+	background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+}	
+
+a.service_buttons {
+    background-color: #E582A2;
+    outline: 1px black solid;
+    float: left;
+    width: 25%;
+    color: #fff;
+    padding: 3em 1em 1em;
+    text-align: center;
+    min-height: 200px;
+    text-decoration: none;
+}
+
+
+section#books {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+article.blogpost {
+	background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#media {
+	background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+}	
+
+img.media_icon {
+	width: 20%;
+}
+p.media_text {
+	clear: both;
+	width: 100%;
+	padding: 5px;
+}
+
+div.media_buttons {
+    background-color: #E582A2;
+    outline: 1px black solid;
+    padding: 4em 0 0 0;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+}
+
+section#newsletter {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav#footer {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+footer { 
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
