@@ -19,11 +19,9 @@ body {
 }
 
 a {
-/*    line-height: .5em;*/
 }
 
 p, ul {
-	color: #FFF;
     line-height: 1.5em;
     font-size: 1em;
     list-style-type: circle;
@@ -34,6 +32,7 @@ p, ul {
 	background-color: #FFF;
     margin: 0 auto;
     width: 80%;
+    max-width: 960px;
 }
 
 header {
@@ -103,11 +102,7 @@ div#main {
 	width: 100%;
 }
 
-section#main_homepage_image {
-	width: 100%;
-	display: table-cell;
-	vertical-align: middle;
-}
+
 
 #hero {
 	color: #FFF;
@@ -117,19 +112,25 @@ section#main_homepage_image {
 } 
 
 #main_homepage_container {
-	height: 0;
+	height: 56.25vh;
 	width: 100%;
-	padding-bottom: 56.25%;
 	display: table;
 }
 
 #main_hompage_image {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
 	background-image: url("../images/kids_muse_southeast_small.jpg"); 
 	background-repeat: no-repeat;
-	background-size: 100%;
-	max-width: 100%;
-	height: 90%;
-	padding: 8em;
+	background-size: cover;
+}
+
+#slogan_container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 550px;
+	line-height: 1.2em;
 }
 
 p#slogan {
@@ -138,6 +139,9 @@ p#slogan {
 	text-align: center;
 	font-size: 1em;
 	letter-spacing: .1em;
+	color: #fff;
+	padding: .5em;
+
 }
 
 section#showcase {
@@ -185,13 +189,13 @@ p.media_text {
 }
 
 div.media_buttons {
-    background-color: #ccc;
-    outline:  1px black solid;
-    padding: 4em 0 0 0;
+    background-color: #fff;
+    padding: 4em 0 1em 0;
     float: left;
     width: 20%;
     text-align: center;
     font-size: .75em;
+    color: #000;
 }
 
 
@@ -216,36 +220,44 @@ a.navfooter {
 	color: #fff;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
 	.wrapper {
 		width: 100%;
 	}
 }
 
 @media screen and (max-width: 825px) {
-	body {
-		font-size: 16px;
-	}
 
 	nav#main {
 		padding: .5em 1em;
 	}
+/*
+	a.navmain {
+		font-size: 1em;
+	}*/
+
+	a.service_buttons {
+		font-size: .8em;
+	}
 }
 
 @media screen and (max-width: 670px) {
+/*	body {
+		font-size: 16px;
+	}
+*/
 	#mobile {
 		text-align: left; 
-		padding-left: 1em;
 		background-color: #000;
 		display: block;
 		color: #fff;
-		padding: .75em;
+		padding: .5em .5em .5em 2em;
 	}
 
-	nav:hover a.navmain {
-		display: block;
+	nav#top {
+		font-size: .8em;
 	}
-
+	
 	a.navmain {
 		float: left;
 		width: 100%;
@@ -253,34 +265,45 @@ a.navfooter {
 		border-bottom: 1px #ccc solid;
 		text-align: center;
 		display: none;
+		font-size: .8em;
 	}
 
 	nav#main {
 		padding: 0;
 	}
 
+	#slogan_container {
+		max-width: 300px;
+	}
+
+	h1#hero {
+		font-size: 1.5em;
+	}
+
+	p#slogan {
+		font-size: .69em;
+
+	}
+
+	nav:hover a.navmain {
+		display: block;
+	}
+
+
 	a.service_buttons {
     	width: 50%;
 	}
 
-	#hero {
-		font-size: 2em;
-	} 
 
 	#main_hompage_image {
 		padding: 3.5em;
 	}
 
-	p#slogan {
-		font-weight: 700;
-		font-size: 1em;
-		letter-spacing: .1em;
-	}
 
 	div.media_buttons {
    		padding: 3em 0 .5em 0;
     	float: left;
-   		width: 33.333%;
+   		width: 33.3333%;
     	font-size: .75em;
 	}
 
