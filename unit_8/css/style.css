@@ -105,6 +105,8 @@ div#main {
 
 section#main_homepage_image {
 	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #hero {
@@ -113,6 +115,13 @@ section#main_homepage_image {
 	text-align: center;
 	font-family: "Arvo", serif;
 } 
+
+#main_homepage_container {
+	height: 0;
+	width: 100%;
+	padding-bottom: 56.25%;
+	display: table;
+}
 
 #main_hompage_image {
 	background-image: url("../images/kids_muse_southeast_small.jpg"); 
