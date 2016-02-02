@@ -1,0 +1,339 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
+body {
+	background-color: #ccc;
+	font-family: "Didact Gothic", sans-serif;
+	font-size: 20px;
+}
+
+a {
+}
+
+p, ul {
+    line-height: 1.5em;
+    font-size: 1em;
+    list-style-type: circle;
+    text-align: center;
+}
+
+.wrapper {
+	background-color: #FFF;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+}
+
+header {
+	background-color: #FFF;
+}
+
+nav {
+	text-align: center;
+}
+nav a {
+	text-decoration: none;
+	padding: 0 .5em;
+}
+
+nav a:hover {
+	font-weight: 600;
+}
+
+nav#top {
+	background-color: #000;
+	color: #fff;
+}
+
+ul#brandnavigation {
+	background-color: #f8f8f8;
+    color: #000;
+    float:left;
+    list-style: none;
+    position:relative;
+    padding: .5em 0em;
+}
+
+a.topbrand {
+	padding: 4em;
+}
+
+ul#otherbrands {
+	display:none;
+	list-style: none;
+	position: absolute;
+	background-color: #f8f8f8;
+    color: #000;
+    padding: .5em;
+
+}
+
+ul#brandnavigation:hover ul#otherbrands {
+    display: block;
+}
+
+a.navtop {
+	color: #000;
+}
+
+img#logo {
+	width: 80%;
+	display: block;
+	padding: 1em;
+	margin: 0 auto;
+}
+
+/*nav#utilities {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}*/
+
+#mobile {
+	display: none;
+}
+
+nav#main {
+	background-color: #56565a;
+    padding: .5em;
+    color: #fff;
+}
+
+a.navmain {
+	color: #fff;
+}
+
+a.navmain:hover {
+	color: #000;
+}
+
+section#alert {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+div#main {
+	width: 100%;
+}
+
+
+
+#hero {
+	color: #FFF;
+	font-size: 3em;
+	text-align: center;
+	font-family: "Arvo", serif;
+} 
+
+#main_homepage_container {
+	height: 56.25vh;
+	width: 100%;
+	display: table;
+}
+
+#main_hompage_image {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	background-image: url("../images/kids_muse_southeast_small.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#slogan_container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 550px;
+	line-height: 1.2em;
+}
+
+p#slogan {
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+	font-size: 1em;
+	letter-spacing: .1em;
+	color: #fff;
+	padding: .5em;
+
+}
+
+section#showcase {
+	width: 100%;
+}	
+
+a.service_buttons {
+/*	background-image: url("../images/kid.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;*/
+	background-color: #000;
+    outline: 1px #fff solid;
+    float: left;
+    width: 25%;
+    color: #fff;
+    padding: 7em 1em 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*section#books {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+article.blogpost {
+	background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+}*/
+
+section#media {
+	width: 100%;
+}	
+
+img.media_icon {
+	width: 20%;
+}
+p.media_text {
+	clear: both;
+	width: 100%;
+	padding: 5px;
+}
+
+div.media_buttons {
+    background-color: #fff;
+    padding: 4em 0 1em 0;
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: .75em;
+    color: #000;
+}
+
+
+/*section#newsletter {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}*/
+
+
+footer { 
+	width: 100%;
+}
+
+nav#footer {
+	background-color: #56565a;
+    padding: .5em;
+    color: #fff;
+}
+
+a.navfooter {
+	color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 825px) {
+
+	nav#main {
+		padding: .5em 1em;
+	}
+/*
+	a.navmain {
+		font-size: 1em;
+	}*/
+
+	a.service_buttons {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 670px) {
+/*	body {
+		font-size: 16px;
+	}
+*/
+	#mobile {
+		text-align: left; 
+		background-color: #000;
+		display: block;
+		color: #fff;
+		padding: .5em .5em .5em 2em;
+	}
+
+	nav#top {
+		font-size: .8em;
+	}
+	
+	a.navmain {
+		float: left;
+		width: 100%;
+		padding: .75em 2em;
+		border-bottom: 1px #ccc solid;
+		text-align: center;
+		display: none;
+		font-size: .8em;
+	}
+
+	nav#main {
+		padding: 0;
+	}
+
+	#slogan_container {
+		max-width: 300px;
+	}
+
+	h1#hero {
+		font-size: 1.5em;
+	}
+
+	p#slogan {
+		font-size: .69em;
+
+	}
+
+	nav:hover a.navmain {
+		display: block;
+	}
+
+
+	a.service_buttons {
+    	width: 50%;
+	}
+
+
+	#main_hompage_image {
+		padding: 3.5em;
+	}
+
+
+	div.media_buttons {
+   		padding: 3em 0 .5em 0;
+    	float: left;
+   		width: 33.3333%;
+    	font-size: .75em;
+	}
+
+	.wrapper {
+		min-width: 330px;
+	}
+}
