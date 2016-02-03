@@ -54,7 +54,7 @@ nav a:hover {
 nav#top {
 	background-color: #000;
 	color: #fff;
-	height: 55px;
+	height: 50px;
 }
 
 ul#brandnavigation {
@@ -64,7 +64,7 @@ ul#brandnavigation {
     list-style: none;
     position:relative;
     width: 300px;
-    height: 55px;
+    height: 50px;
 }
 
 a.topbrand {
@@ -104,12 +104,15 @@ a.navtop {
 
 img#logo {
 	width: 80%;
+	margin: .65em 0;
 }
 
 div#main_nav {
-	background-color: #56565a;
+	background-color: #000;
     padding: .5em;
     color: #fff;
+    height: 50px;
+    float: left;
 
 }
 
@@ -161,7 +164,7 @@ a.navmain {
 }
 
 a.navmain:hover {
-	color: #000;
+	color: #ccc;
 }
 
 section#alert {
