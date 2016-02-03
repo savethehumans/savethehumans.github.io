@@ -63,7 +63,7 @@ nav#top {
 	clear: both;
 }*/
 
-ul#brandnavigation {
+#brandnavigation {
 	background-color: #fff;
     color: #000;
     float:left;
@@ -73,11 +73,11 @@ ul#brandnavigation {
     width: 20%;
 }
 
-a.topbrand {
+.topbrand {
 	color: #000;
 }
 
-ul#otherbrands {
+#otherbrands {
 	display:none;
 	width: 100%;
 	list-style: none;
@@ -101,7 +101,7 @@ ul#otherbrands {
     width: 8px;
 }
 
-ul#brandnavigation:hover ul#otherbrands {
+#brandnavigation:hover ul#otherbrands {
     display: block;
 }
 
