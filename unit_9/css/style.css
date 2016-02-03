@@ -54,6 +54,7 @@ nav a:hover {
 nav#top {
 	background-color: #000;
 	color: #fff;
+	height: 55px;
 }
 
 ul#brandnavigation {
@@ -62,7 +63,6 @@ ul#brandnavigation {
     float:left;
     list-style: none;
     position:relative;
-    padding: .5em 0em;
     width: 300px;
     height: 55px;
 }
@@ -104,15 +104,30 @@ a.navtop {
 
 img#logo {
 	width: 80%;
-	padding: .5em;
 }
 
+div#main_nav {
+	background-color: #56565a;
+    padding: .5em;
+    color: #fff;
+
+}
+
+ul#language_nav {
+	display: block;
+	float: right;
+	font-style: italic;
+	list-style: none;
+}
+
+
 ul#signon {
-	float:right;
 	background-color: #a93338;
 	padding: .5em 0;
 	width: 150px;
 	list-style: none;
+	display: block;
+	float:right;
 
 }
 
@@ -134,12 +149,12 @@ ul#signon {
 #mobile {
 	display: none;
 }
-
+/*
 nav#main {
 	background-color: #56565a;
     padding: .5em;
     color: #fff;
-}
+}*/
 
 a.navmain {
 	color: #fff;
