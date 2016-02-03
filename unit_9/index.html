@@ -12,11 +12,12 @@
 	<header>
 			<nav id="top" class="clearfix">
 				<div id="brandnavigation">
-					<a href="#" class="topbrand"><img src="images/apl_logo.svg"  id="logo" alt="Austin Public Library logo">
+					<a href="#" class="topbrand">
+						<img src="images/apl_logo.svg"  id="logo" alt="Austin Public Library logo">
 					</a>
 					<ul id="otherbrands">
 						<li>
-							<a href="#" class="navtop">Austin History Center
+							<a href="#" class="navtop" id="ahc_logo">Austin History Center
 							</a>
 						</li>
 					<li>
@@ -28,13 +29,25 @@
 
 				<div id="main_nav">
 					<a href="#" id="mobile">&#9776; Menu</a>
-					<a href="#" class="navmain">Browse</a>
+					<a href="#" class="navmain" id="browse_menu">Browse</a>
+						<ul class="drop_down_menu">
+							<li>
+								<a href="#">link 1</a>
+							</li>
+							<li>
+								<a href="#">link 2</a>
+							</li>
+							<li>
+								<a href="#">link 3</a>
+							</li>
+						</ul>
+
 					<a href="#" class="navmain">Resources</a>
 					<a href="#" class="navmain">Events</a>
 					<a href="#" class="navmain">Locations</a>
 					<a href="#" class="navmain">About</a>
-					<a href="#" class="navmain">Kids</a>
-					<a href="#" class="navmain">Teens</a>
+					<a href="#" class="navmain" id="kids">Kids</a>
+					<a href="#" class="navmain" id="teens">Teens</a>
 					<a href="#" id="language_nav">espanol</a>
 				</div>
 
@@ -43,7 +56,7 @@
 				</ul>
 			</nav>
 	</header>
-	<div class="wrapper">
+
 		<div id="main">
 			<!-- <section id="alert">
 			</section> -->
@@ -87,12 +100,10 @@
 							</div>   
 						</div>  
 					</div> -->
-
 				</section>
 			</div>
-
+		<div class="wrapper" class="clearfix">
 			<section id="showcase" class="clearfix">
-
 				<a href="#" class="service_buttons">ebooks</a>
 				<a href="#" class="service_buttons">early literacy</a>
 				<a href="#" class="service_buttons">meeting rooms</a>
@@ -111,7 +122,6 @@
 			</article> -->
 
 			<section id="media" class="clearfix">
-				
 					<div class="media_buttons">
 						<img src="images/book-icon.png" class="media_icon" alt="book icon">
 						<p class="media_text">Books</p>
