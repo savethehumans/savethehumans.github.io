@@ -18,7 +18,11 @@ body {
 	font-size: 20px;
 }
 
-a {
+a { 
+}
+
+a:visited
+{	color:inherit;
 }
 
 p, ul {
@@ -59,11 +63,7 @@ nav a:hover {
 	height: 50px;
 	position: fixed;
 }
-
-/*nav#top::after {
-	content: ""; 
-	clear: both;
-}*/
+/* brand drop down*/
 
 #brandnavigation {
 	background-color: #fff;
@@ -120,32 +120,70 @@ nav a:hover {
 	margin: .65em 0;
 }
 
+/* Main Navigation*/
+
 #main_nav {
 	background-color: #000;
     color: #fff;
     float: left;
     width: 60%;
+    border: 1 solid black;
 }
-/* What is going wrong here with the drop down menut?*/
-#browse_menu {
+
+/* Browse Drop Down Navigation*/
+
+.browse_menu .resources_menut{
 	position:relative;
 }
 
 .drop_down_menu {
 	display:none;
-	width: 100%;
+	width: 20%;
 	list-style: none;
 	position: absolute;
 	top: 50px;
-	background-color: #f8f8f8;
-    color: #000;
-}*/
-
-
-
-#browse_menu:hover ul.drop_down_menu {
-    display: block;
+    text-decoration: none;
 }
+
+.main_drop_down {
+	color: #fff;
+	padding: .5em 0;
+}
+
+
+.main_drop_down {
+	border-bottom: 1px solid #ccc;
+}
+
+a.navmain:hover {
+	color: #000;
+	background-color: white;
+}
+
+.browse_menu:hover .drop_down_menu {
+    display: block;
+    color: #000;
+	background-color: white;
+}
+
+.browse_menu:hover #browse {
+    background-color: #fff;
+    color: #000;
+}
+
+/* resources drop down*/
+.resources_menu:hover .drop_down_menu {
+    display: block;
+    color: #000;
+	background-color: white;
+}
+
+.resources_menu:hover #resources {
+    background-color: #fff;
+    color: #000;
+}
+
+/* kids drop down*/
 
 #kids {
 	background-color: #9696ca;
@@ -208,9 +246,7 @@ a.navmain {
 	padding: .6em;
 }
 
-a.navmain:hover {
-	color: #ccc;
-}
+
 
 section#alert {
 	background-color: #FFE2B8;
