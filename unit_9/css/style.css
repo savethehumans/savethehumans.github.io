@@ -43,9 +43,10 @@ header {
 	background-color: #FFF;
 }
 
-nav {
+/*nav {
 	text-align: center;
-}
+}*/
+
 nav a {
 	text-decoration: none;
 	display: block;
@@ -130,6 +131,7 @@ nav a:hover {
     border: 1 solid black;
 }
 
+
 /* Browse Drop Down Navigation*/
 
 .browse_menu .resources_menut{
@@ -155,11 +157,11 @@ nav a:hover {
 	border-bottom: 1px solid #ccc;
 }
 
-a.navmain:hover {
+/*a.dropdown:hover {
 	color: #000;
 	background-color: white;
 }
-
+*/
 .browse_menu:hover .drop_down_menu {
     display: block;
     color: #000;
@@ -172,15 +174,46 @@ a.navmain:hover {
 }
 
 /* resources drop down*/
-.resources_menu:hover .drop_down_menu {
+
+
+.dropbtn {
     display: block;
     color: #000;
-	background-color: white;
+    text-align: left;
+    padding: .6em;
+    text-decoration: none;
 }
 
-.resources_menu:hover #resources {
+.dropdown:hover .dropbtn {
     background-color: #fff;
     color: #000;
+}
+
+.dropdown {
+    display: block;
+    float: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: .6em;
+    text-decoration: none;
+    border-bottom: 1px #ccc solid;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* kids drop down*/
@@ -193,6 +226,16 @@ a.navmain:hover {
 	background-color: #169bbf;
 }
 
+.dropdown:hover #kids {
+    background-color: #fff;
+    color: #000;
+}
+
+.dropdown:hover #teens {
+    background-color: #fff;
+    color: #000;
+}
+
 #language_nav {
 	display: block;
 	float: right;
@@ -203,8 +246,78 @@ a.navmain:hover {
 	padding: 1em 1em 0 0;
 }
 
+#location_icon {
+	width: 4%;
+	padding: .3em;
+	display: inline-block;
+}
 
-#signon {
+#magnify_icon {
+	width: 4%;
+	padding: .2em;
+	display: inline-block;
+}
+
+#location_icon:hover {
+
+}
+
+#magnify_icon:hover {
+
+}
+
+/* Sign In dropdown*/
+.signinbtn {
+    display: block;
+    background-color: #a93338;
+    color: #fff;
+    padding: .6em;
+    text-decoration: none;
+}
+
+signin:hover .signinbtn {
+    background-color: #fff;
+    color: #000;
+}
+
+#signin {
+    display: block;
+    float: right;
+    width: 10%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: .6em;
+    text-decoration: none;
+    border-bottom: 1px #ccc solid;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+#signin:hover .dropdown-content {
+    display: block;
+    left:auto;
+    right:0;
+}
+
+#signin:hover #signin_hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*#signin {
 	background-color: #a93338;
 	padding: .5em 0;
 	width: 10%;
@@ -213,9 +326,9 @@ a.navmain:hover {
 	float:right;
 	height: 50px;
 
-}
+}*/
 
-#signon::after {
+#signin::after {
 	transform: rotate(45deg);
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
@@ -233,19 +346,13 @@ a.navmain:hover {
 #mobile {
 	display: none;
 }
-/*
-nav#main {
-	background-color: #56565a;
-    padding: .5em;
-    color: #fff;
-}*/
 
-a.navmain {
+/*a.dropdown {
 	color: #fff;
 	float: left;
 	padding: .6em;
 }
-
+*/
 
 
 section#alert {
@@ -254,7 +361,7 @@ section#alert {
     padding: 20px;
 }
 
-div#main {
+#main {
 	width: 100%;
 }
 
@@ -268,9 +375,10 @@ div#main {
 } 
 
 #main_homepage_container {
-	height: 56.25vh;
+	height: 88.25vh;
 	width: 100%;
 	display: table;
+	padding: 50px 0 0 0;
 }
 
 #main_hompage_image {
@@ -279,6 +387,7 @@ div#main {
 	vertical-align: middle;
 	background-image: url("../images/kids_muse_southeast_small.jpg"); 
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 
@@ -364,19 +473,21 @@ div.media_buttons {
 
 footer { 
 	width: 100%;
-}
-
-nav#footer {
 	background-color: #56565a;
     padding: .5em;
     color: #fff;
+}
+
+nav#footer {
+	margin: 0 auto;
+	max-width: 960px;
 }
 
 a.navfooter {
 	color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1121px) {
 	.wrapper {
 		width: 100%;
 	}
@@ -405,8 +516,8 @@ a.navfooter {
 	#top {
 		font-size: .8em;
 	}
-	
-	.navmain {
+	/*
+	.dropdown {
 		float: left;
 		width: 100%;
 		padding: .75em 2em;
@@ -414,10 +525,11 @@ a.navfooter {
 		text-align: center;
 		display: none;
 		font-size: .8em;
-	}
+	}*/
 
 	#main {
 		padding: 0;
+
 	}
 
 	#slogan_container {
@@ -432,10 +544,10 @@ a.navfooter {
 		font-size: .69em;
 
 	}
-
-	nav:hover a.navmain {
+/*
+	nav:hover a.dropdown {
 		display: block;
-	}
+	}*/
 
 
 	a.service_buttons {
