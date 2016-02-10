@@ -21,8 +21,8 @@ body {
 a { 
 }
 
-a:visited
-{	color:inherit;
+a:visited {	
+	color:inherit;
 }
 
 p, ul {
@@ -253,10 +253,20 @@ nav a:hover {
 	float: left;
 }
 
+#search {
+	width: 50px;
+    margin: 0 auto;
+    display: block;
+    float: left;
+	padding: .5em;
+	background-image: url(../images/magnify_white.svg);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-origin:content-box;
+}
+
 #magnify_icon {
-	width: 30px;
-	padding: .3em;
-	display: inline-block;
+	 content: '';
 }
 
 #location_icon:hover {
@@ -524,6 +534,8 @@ a.navfooter {
 		display: block;
 	
 	}
+
+	.dropdown.active { display: block; }
 }
 
 @media screen and (max-width: 670px) {
