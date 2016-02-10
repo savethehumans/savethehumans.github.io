@@ -107,12 +107,9 @@
       						<a href="#">Recommendations for Teens</a>
     					</div>
   					</div>
-  					
-  					<div id="search">
-  						<a href="#" id="magnify_icon">.</a> 
-  					</div>
 <!-- 					<a href="#" id="language_nav">espanol</a> -->
 				</div>
+
 				<div id="signin">
     				<a href="#" class="signinbtn" id="signin_hover">SIGN IN</a>
     				<div class="dropdown-content">
@@ -124,6 +121,9 @@
       					<a href="#">Get a Library Card</a>
     				</div>
     			</div>
+    							<div id="search">
+  						<a href="#" id="magnify_icon">.</a> 
+  				</div>
 			</nav>
 	</header>
 
@@ -233,13 +233,20 @@
 			</nav>
 		</footer>	
 	</div>
-	<!--<script>$(document).ready(function() {     $("#owl-example").owlCarousel();   });</script>-->
+	<!--<script>$(document).ready(function() {     $("#owl-example").owlCarousel();   });</script>
 	<script>
 	$('#mobile').click(function(){
 		console.log('hello');
 		$('.dropdown').addClass('active');
 	});
-	</script>
+	</script> -->
+<script>
+	$( "#mobile" ).click(function() {
+  $( ".dropdown" ).toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+</script>
 </body> 
 </html>
 

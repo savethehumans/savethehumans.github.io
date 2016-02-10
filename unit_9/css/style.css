@@ -257,7 +257,7 @@ nav a:hover {
 	width: 50px;
     margin: 0 auto;
     display: block;
-    float: left;
+    float: right;
 	padding: .5em;
 	background-image: url(../images/magnify_white.svg);
 	background-size: 30px;
@@ -266,7 +266,6 @@ nav a:hover {
 }
 
 #magnify_icon {
-	 content: '';
 }
 
 #location_icon:hover {
@@ -519,7 +518,7 @@ a.navfooter {
 	}
 
 	#main_nav {
-    	width: 150px;
+    	width: 250px;
 	}
 
 	#signin {
